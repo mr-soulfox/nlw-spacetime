@@ -1,0 +1,21 @@
+{
+	"name": "@spacetime/server",
+	"version": "1.0.0",
+	"description": "Server package from spacetime (NLW) project.",
+	"scripts": {
+		"dev": "tsx watch ./src/server.ts",
+		"lint": "eslint ./src --ext .ts --fix",
+		"migrate": "prisma migrate dev --schema=./database/prisma/schema.prisma",
+		"studio": "prisma studio --schema=./database/prisma/schema.prisma"
+	},
+	"author": "Marcos Paulo <mr.soulfox@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"@prisma/client": "^4.14.1",
+		"dotenv": "^16.0.3",
+		"fastify": "^4.17.0"
+	},
+	"devDependencies": {
+		"prisma": "^4.14.1"
+	}
+}
