@@ -10,7 +10,9 @@
 	],
 	"scripts": {
 		"dev:server": "npm run dev --workspace=packages/server",
+		"dev:web": "npm run dev --workspace=packages/web",
 		"lint:server": "npm run lint --workspace=packages/server",
+		"lint:web": "npm run lint --workspace=packages/web",
 		"lint:fix": "eslint --fix",
 		"lint-staged": "lint-staged",
 		"typecheck": "npx tsc --noEmit",
@@ -25,6 +27,7 @@
 		"eslint": "^8.41.0",
 		"husky": "^8.0.0",
 		"lint-staged": "^13.2.2",
+		"prettier": "^2.8.8",
 		"tsx": "^3.12.7",
 		"typescript": "^5.0.4"
 	}
